@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tab>
+		<fieldset>
+			<field name="title" label="widgets.latestBlogPosts:form.title.label" type="string" maxLength="50" default="" />
+			<field binding="blog_post.blog" />
+			<field binding="blog_post.author" required="false" />
+			<field name="category" control="manyToOneSelect" relatedto="blog_category" required="false" label="widgets.latestBlogPosts:form.category.label" />
+			<field name="max_posts" label="widgets.latestBlogPosts:form.max_posts.label"  type="numeric" control="spinner" minValue="1" maxValue="25" default="5" />
+		</fieldset>
+	</tab>
+</form>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tab>
+		<fieldset>
+			<field name="title" label="widgets.latestEvents:form.title.label" type="string" maxLength="50" default="Latest events" />
+			<field binding="event.event_category" />
+			<field name="max_events" label="widgets.latestEvents:form.max_events.label"  type="numeric" control="spinner" minValue="1" maxValue="25" default="5" />
+		</fieldset>
+	</tab>
+</form>

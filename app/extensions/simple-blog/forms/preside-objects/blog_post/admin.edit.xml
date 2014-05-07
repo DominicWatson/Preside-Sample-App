@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tab title="preside-objects.blog_post:editform.basic.tab">
+		<fieldset>
+			<field binding="blog_post.label" />
+			<field binding="blog_post.slug" control="autoslug" basedOn="label" />
+			<field binding="blog_post.blog" />
+			<field binding="blog_post.author" />
+			<field binding="blog_post.categories" />
+			<field binding="blog_post.teaser" preprocessor="RudeWordFilter" />
+			<field binding="blog_post.body" />
+		</fieldset>
+	</tab>
+	<tab title="preside-objects.blog_post:editform.publishing.tab">
+		<fieldset>
+			<field binding="blog_post.published" />
+			<field binding="blog_post.publish_date" />
+		</fieldset>
+	</tab>
+</form>

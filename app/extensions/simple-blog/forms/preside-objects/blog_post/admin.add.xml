@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<tab>
+		<fieldset>
+			<field binding="blog_post.label" />
+			<field binding="blog_post.slug" control="autoslug" basedOn="label" />
+			<field binding="blog_post.blog" />
+			<field binding="blog_post.author" />
+		</fieldset>
+	</tab>
+</form>
